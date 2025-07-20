@@ -34,7 +34,7 @@ const About = () => {
             transition={{ duration: 0.5 }}
             className="text-center mb-16"
           >
-            <span className="inline-block py-1 px-3 rounded-full text-xs font-medium bg-brand-purple/10 text-brand-purple mb-4">
+            <span className="inline-block py-1 px-3 rounded-full text-xs font-medium bg-teal-500/10 text-brand-purple mb-4">
               About Me
             </span>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
@@ -122,7 +122,7 @@ const About = () => {
                   <span
                     className={`text-xs py-1 px-3 rounded-full ${
                       skill.level === "Advanced"
-                        ? "bg-brand-purple/20 text-brand-purple"
+                        ? "bg-teal-500/20 text-brand-purple"
                         : skill.level === "Intermediate"
                         ? "bg-blue-500/20 text-blue-400"
                         : "bg-green-500/20 text-green-400"

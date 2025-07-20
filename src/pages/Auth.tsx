@@ -77,7 +77,7 @@ const Auth = () => {
             transition={{ duration: 0.5 }}
             className="text-center mb-16"
           >
-            <span className="inline-block py-1 px-3 rounded-full text-xs font-medium bg-brand-purple/10 text-brand-purple mb-4">
+            <span className="inline-block py-1 px-3 rounded-full text-xs font-medium bg-teal-500/10 text-brand-purple mb-4">
               Account Access
             </span>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
@@ -143,7 +143,7 @@ const Auth = () => {
                       
                       <Button
                         type="submit"
-                        className="w-full bg-brand-purple hover:bg-brand-purple/90"
+                        className="w-full bg-teal-500 hover:bg-teal-500/90"
                         disabled={isLoading}
                       >
                         {isLoading ? (
@@ -213,7 +213,7 @@ const Auth = () => {
                       
                       <Button
                         type="submit"
-                        className="w-full bg-brand-purple hover:bg-brand-purple/90"
+                        className="w-full bg-teal-500 hover:bg-teal-500/90"
                         disabled={isLoading}
                       >
                         {isLoading ? (

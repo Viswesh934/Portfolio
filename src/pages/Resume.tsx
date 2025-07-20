@@ -62,7 +62,7 @@ const Resume = () => {
             transition={{ duration: 0.5 }}
             className="text-center mb-16"
           >
-            <span className="inline-block py-1 px-3 rounded-full text-xs font-medium bg-brand-purple/10 text-brand-purple mb-4">
+            <span className="inline-block py-1 px-3 rounded-full text-xs font-medium bg-teal-500/10 text-brand-purple mb-4">
               Why Hire Me?
             </span>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
@@ -91,7 +91,7 @@ const Resume = () => {
                 transition={{ duration: 0.4, delay: index * 0.1 }}
                 className="glass-panel p-6 rounded-lg flex items-start"
               >
-                <div className="mr-4 bg-brand-purple/10 p-3 rounded-full">
+                <div className="mr-4 bg-teal-500/10 p-3 rounded-full">
                   {item.icon}
                 </div>
                 <div>

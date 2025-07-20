@@ -31,15 +31,17 @@ const Projects = () => {
     image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80",
     tags: ["MERN", "Docker", "CI/CD", "Sockets", "Prometheus"],
     code: "https://github.com/gyanavardhana/Project-Management-Collaboration",
+    live: "https://colab-pro.vercel.app/",
     category: "web",
   },
   {
     id: 2,
     title: "Event Management System",
     description: "Real-time event management app for users and admins. Features include event scheduling, deletion, analytics, and Jest-based unit tests.",
-    image: "",
+    image: "uploads/Event.jpeg",
     tags: ["Node.js", "MongoDB", "EJS", "Tailwind", "Jest"],
     code: "https://github.com/Viswesh934/Event-Management-System",
+    live: "",
     category: "web",
   },
    {
@@ -47,7 +49,7 @@ const Projects = () => {
     title: "Well BEE Health Platform",
     description:
       "Developed a scalable health platform supporting up to 1,000 users with therapy bots, Fitbit integration, and health tips. Includes anonymous group chat with sentiment analysis and detailed documentation for onboarding.",
-    image: "https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?auto=format&fit=crop&w=800&q=80",
+    image: "uploads/wellbee.svg",
     tags: [
       "ReactJS",
       "NodeJS",
@@ -61,6 +63,7 @@ const Projects = () => {
       "Sentiment Analysis",
     ],
     code: "https://github.com/Viswesh934/WELLBEE", 
+    live: "https://wellbee-jade.vercel.app/", 
     category: "web",
   },
     {
@@ -68,7 +71,7 @@ const Projects = () => {
     title: "PYRO (Predictive Maintenance and Risk Operations)",
     description:
       "A product maintenance prediction system with user management, product data upload, ML-based predictions, durability leaderboard, and email alerts for low-performing products. Features a comprehensive UI and detailed documentation.",
-    image: "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80",
+    image: "uploads/Pyro.png",
     tags: [
       "Python",
       "ReactJS",
@@ -80,6 +83,7 @@ const Projects = () => {
       "Documentation",
     ],
     code: "https://github.com/Viswesh934/PYRO", 
+    live: "https://pyro-chi.vercel.app/", 
     category: "web",
   },
 
@@ -87,13 +91,13 @@ const Projects = () => {
     id: 6,
     title: "ML Workflow for Scones Unlimited (AWS)",
     description: "Image classification system using DenseNet-169, PyTorch, and AWS pipeline (S3, SageMaker). Achieved 90% test accuracy.",
-    image: "https://images.unsplash.com/photo-1614631266739-01d7f9fd3d3c?auto=format&fit=crop&w=800&q=80",
+    image: "uploads/Aws.png",
     tags: ["AWS", "PyTorch", "SageMaker", "Machine Learning"],
     code: "https://github.com/Viswesh934/ML-workflow-for-Scones-Unlimited-AWS",
+    live: "", 
     category: "ai",
   }
 ];
-
 
   const getIcon = (category: string) => {
     switch (category) {
@@ -138,7 +142,7 @@ const Projects = () => {
             transition={{ duration: 0.5 }}
             className="text-center mb-16"
           >
-            <span className="inline-block py-1 px-3 rounded-full text-xs font-medium bg-brand-purple/10 text-brand-purple mb-4">
+            <span className="inline-block py-1 px-3 rounded-full text-xs font-medium bg-teal-500/10 text-brand-purple mb-4">
               Portfolio
             </span>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
@@ -173,7 +177,7 @@ const Projects = () => {
                       whileTap={{ scale: 0.95 }}
                       className={`px-3 py-1.5 text-xs font-medium rounded-full transition-colors ${
                         filter === category.id 
-                          ? "bg-brand-purple text-white" 
+                          ? "bg-teal-500 text-white" 
                           : "bg-secondary hover:bg-secondary/80 text-muted-foreground"
                       }`}
                     >
@@ -211,6 +215,7 @@ const Projects = () => {
                   image={Array.isArray(project.image) ? project.image[0] : project.image}
                   tags={project.tags}
                   code={Array.isArray(project.code) ? project.code[0] : project.code}
+                  live={Array.isArray(project.live) ? project.live[0] : project.live}
                   category={Array.isArray(project.category) ? project.category[0] : project.category}
                   icon={getIcon(Array.isArray(project.category) ? project.category[0] : project.category)}
                 />
@@ -229,7 +234,7 @@ const Projects = () => {
                   }}
                   whileHover={{ scale: 1.05, backgroundColor: "#8B5CF6" }}
                   whileTap={{ scale: 0.95 }}
-                  className="mt-4 inline-flex items-center px-4 py-2 bg-brand-purple text-white rounded-lg text-sm font-medium hover:bg-opacity-90 transition-all"
+                  className="mt-4 inline-flex items-center px-4 py-2 bg-teal-500 text-white rounded-lg text-sm font-medium hover:bg-opacity-90 transition-all"
                 >
                   Clear Filters
                 </motion.button>

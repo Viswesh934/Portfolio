@@ -1,6 +1,6 @@
 
 import { motion } from "framer-motion";
-import { LucideIcon, Github } from "lucide-react";
+import { LucideIcon, Github, Zap } from "lucide-react";
 
 interface ProjectCardProps {
   title: string;
@@ -8,11 +8,12 @@ interface ProjectCardProps {
   image: string;
   tags: string[];
   code: string;
+  live?: string;
   category: string;
   icon: LucideIcon;
 }
 
-const ProjectCard = ({ title, description, image, tags, code, category, icon: Icon }: ProjectCardProps) => {
+const ProjectCard = ({ title, description, image, tags, code, live, category, icon: Icon }: ProjectCardProps) => {
   const getCategoryName = (category: string) => {
     return category === "iot" ? "IoT" : category === "ai" ? "AI & ML" : category;
   };
@@ -57,8 +58,8 @@ const ProjectCard = ({ title, description, image, tags, code, category, icon: Ic
             </motion.span>
           ))}
         </div>
-        
-        <div className="flex justify-center">
+           
+<div className="flex justify-center gap-6">
           <motion.a
             href={code}
             target="_blank"
@@ -70,8 +71,23 @@ const ProjectCard = ({ title, description, image, tags, code, category, icon: Ic
             <Github className="mr-1.5 h-4 w-4" />
             Source Code
           </motion.a>
+
+          {live && (
+            <motion.a
+              href={live}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center text-teal-500 hover:text-teal-600 transition-colors font-semibold"
+              whileHover={{ scale: 1.08, color: "#38bdf8" }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <Zap className="mr-1.5 h-4 w-4 text-yellow-400 animate-pulse" />
+              Live Demo
+            </motion.a>
+          )}
         </div>
       </div>
+
     </motion.div>
   );
 };

@@ -16,7 +16,7 @@ const Index = () => {
   title: "Well BEE Health Platform",
   description:
     "Developed a scalable health platform supporting up to 1,000 users with therapy bots, Fitbit integration, and health tips. Includes anonymous group chat with sentiment analysis and detailed documentation for onboarding.",
-  image: "https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?auto=format&fit=crop&w=800&q=80",
+  image: "uploads/wellbee.svg",
   tags: [
     "ReactJS",
     "NodeJS",
@@ -35,7 +35,7 @@ const Index = () => {
       title: "PYRO (Predictive Maintenance and Risk Operations)",
       description:
         "A product maintenance prediction system with user management, product data upload, ML-based predictions, durability leaderboard, and email alerts for low-performing products. Features a comprehensive UI and detailed documentation.",
-      image: "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80",
+      image: "uploads/Pyro.png",
       tags: [
         "Python",
         "ReactJS",
@@ -54,7 +54,7 @@ const Index = () => {
       title: "ML Workflow for Scones Unlimited (AWS)",
       description:
         "Image classification system using DenseNet-169, PyTorch, and AWS pipeline (S3, SageMaker). Achieved 90% test accuracy.",
-      image: "https://images.unsplash.com/photo-1614631266739-01d7f9fd3d3c?auto=format&fit=crop&w=800&q=80",
+      image: "uploads/Aws.png",
       tags: ["AWS", "PyTorch", "SageMaker", "Machine Learning"],
       code: "https://github.com/Viswesh934/ML-workflow-for-Scones-Unlimited-AWS",
       link: "/projects",
@@ -92,7 +92,7 @@ const Index = () => {
             <span className="inline-block py-1 px-3 rounded-full text-xs font-medium bg-teal-500/10 text-teal-400 mb-4">
               About Me
             </span>
-            <h2 className="text-4xl font-bold mb-6">Who I Am</h2>
+            <h2 className="text-4xl font-bold mb-6">Who is Viswesh?</h2>
             <p className="max-w-3xl mx-auto text-muted-foreground">
               I am a software engineer with a passion for building scalable, reliable systems. My expertise spans full-stack development, machine learning, and cloud technologies. I thrive on solving complex problems and delivering impactful solutions.
             </p>

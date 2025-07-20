@@ -18,7 +18,7 @@ const InfoCard = ({ icon: Icon, title, children, iconColor = "text-brand-purple"
       className="glass-panel p-8 rounded-lg"
     >
       <div className="flex items-center mb-4">
-        <div className="bg-brand-purple/10 p-3 rounded-lg mr-4">
+        <div className="bg-teal-500/10 p-3 rounded-lg mr-4">
           <Icon className={`h-6 w-6 ${iconColor}`} />
         </div>
         <h3 className="text-xl font-semibold">{title}</h3>

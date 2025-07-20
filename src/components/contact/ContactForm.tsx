@@ -31,7 +31,7 @@ const Contact = () => {
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.97 }}
         onClick={handleMailClick}
-        className="flex items-center px-6 py-3 rounded-lg bg-brand-purple text-white font-medium transition-all shadow-lg hover:bg-brand-purple/90"
+        className="flex items-center px-6 py-3 rounded-lg bg-teal-500 text-white font-medium transition-all shadow-lg hover:bg-teal-500/90"
       >
         <Mail className="mr-2 h-5 w-5" />
         Send Me an Email

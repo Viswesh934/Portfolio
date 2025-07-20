@@ -102,7 +102,7 @@ const SkillsSection = () => {
             whileTap={{ scale: 0.95 }}
             className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 backdrop-blur-sm border ${
               activeFilter === category
-                ? "bg-brand-purple text-white border-brand-purple/50"
+                ? "bg-teal-500 text-white border-brand-purple/50"
                 : "bg-gray-800/30 text-gray-300 border-white/10 hover:bg-gray-800/50 hover:border-brand-purple/30"
             }`}
           >

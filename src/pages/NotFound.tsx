@@ -41,7 +41,7 @@ const NotFound = () => {
             >
               <Link
                 to="/"
-                className="inline-flex items-center bg-brand-purple text-white px-6 py-3 rounded-lg font-medium hover:bg-opacity-90 transition-all"
+                className="inline-flex items-center bg-teal-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-opacity-90 transition-all"
               >
                 <Home className="mr-2 h-5 w-5" />
                 Back to Home

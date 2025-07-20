@@ -20,7 +20,7 @@ const CertificationCard = ({ name, issuer, date, description, index }: Certifica
       className="glass-panel p-6 rounded-lg"
     >
       <div className="flex items-start">
-        <div className="bg-teal-500/10 p-3 rounded-lg mr-4 mt-1">
+        <div className="bg-teal-500 p-3 rounded-lg mr-4 mt-1">
           <Award className="h-6 w-6 text-teal-400" />
         </div>
         <div>

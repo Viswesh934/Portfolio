@@ -66,7 +66,7 @@ const Admin = () => {
             transition={{ duration: 0.5 }}
             className="text-center mb-16"
           >
-            <span className="inline-block py-1 px-3 rounded-full text-xs font-medium bg-brand-purple/10 text-brand-purple mb-4">
+            <span className="inline-block py-1 px-3 rounded-full text-xs font-medium bg-teal-500/10 text-brand-purple mb-4">
               Admin Panel
             </span>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
